@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { createConnection, getConnection } from 'typeorm';
 import { Product } from '../entities/Product';
-import app from '../app'; // Supondo que a inicialização do Express esteja em 'app.ts'
+import app from '../app'; //
 
 describe('ProductController', () => {
   // Conectar ao banco de dados antes de todos os testes
@@ -20,7 +20,7 @@ describe('ProductController', () => {
     const response = await request(app).get('/products');
 
     expect(response.status).toBe(200);
-    expect(Array.isArray(response.body)).toBe(true); // Verifica se o retorno é um array
+    expect(Array.isArray(response.body)).toBe(true); 
   });
 
   // Teste para criar um novo produto
