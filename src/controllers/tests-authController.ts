@@ -1,7 +1,6 @@
 import request from "supertest";
 import { getRepository } from "typeorm";
 import jwt from "jsonwebtoken";
-import app from "../app"; 
 import { AuthController } from "../controllers/AuthController";
 import { User } from "../entities/User";
 import bcrypt from "../utils/bcrypt";
